@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseControlActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bkBtn"
+            style="@style/Widget.Material3.Button.IconButton"
+            app:icon="@drawable/ic_back"
+            app:iconTint="@color/black"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/keyBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="keyboardChose"
+            android:text="Keyboard"
+            android:textAllCaps="false"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:cornerRadius="10dp"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/txtBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="textChose"
+            android:text="Text"
+            android:textAllCaps="false"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:cornerRadius="10dp"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/musBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mouseChose"
+            android:text="Mouse"
+            android:textAllCaps="false"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:cornerRadius="10dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
